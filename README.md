@@ -12,7 +12,7 @@ Official prebuild can be found at [[2]](https://llvm.org/builds/)[[3]](https://r
 
 ### source code
 
-Also one can build llvm/clang from source code.
+One also can build llvm/clang from source code.
 
 #### llvm
 
