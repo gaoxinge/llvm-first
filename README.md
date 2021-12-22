@@ -45,4 +45,4 @@ $ cmake --install build/ --prefix install
 
 ### source code
 
-One can add llvm to project by compiling source code, which refers to [[8]](https://stackoverflow.com/questions/57298264/cmake-build-with-llvm-project-as-a-subdirectory)[[9]](./1)
+One can add llvm to project by compiling source code, which refers to [[8]](https://stackoverflow.com/questions/57298264/cmake-build-with-llvm-project-as-a-subdirectory)[[9]](./1).
