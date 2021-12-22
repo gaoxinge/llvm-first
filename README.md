@@ -10,3 +10,33 @@ One can use llvm/clang in msvc by visual studio, which can refer to [[1]](https:
 
 Official prebuild can be found at [[2]](https://llvm.org/builds/)[[3]](https://releases.llvm.org/download.html#11.0.0). But it doesn't contain `llvm-config`.
 
+### source code
+
+Also one can build llvm/clang from source code.
+
+#### llvm
+
+```shell
+$ git clone git@github.com:llvm/llvm-project.git --depth=1
+$ cmake -S llvm-project/llvm -B build/ -G "Visual Studio 16 2019" -A x64 -T host=x64 -DLLVM_TARGETS_TO_BUILD=X86
+$ cmake --build build/ --config Release
+$ cmake --install build/ --prefix install
+```
+
+#### clang
+
+```shell
+$ git clone git@github.com:llvm/llvm-project.git --depth=1
+$ cmake -S llvm-project/clang -B build/ -G "Visual Studio 16 2019" -A x64 -T host=x64 -DLLVM_TARGETS_TO_BUILD=X86 -DLLVM_DIR=<llvm_install_dir>/lib/cmake/llvm
+$ cmake --build build/ --config Release
+$ cmake --install build/ --prefix install
+```
+
+#### llvm + clang
+
+```shell
+$ git clone git@github.com:llvm/llvm-project.git --depth=1
+$ cmake -S llvm-project/llvm -B build/ -G "Visual Studio 16 2019" -A x64 -T host=x64 -DLLVM_TARGETS_TO_BUILD=X86 -DLLVM_ENABLE_PROJECTS=clang
+$ cmake --build build/ --config Release
+$ cmake --install build/ --prefix install
+```
