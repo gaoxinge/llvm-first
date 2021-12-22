@@ -12,7 +12,7 @@ Official prebuild can be found at [[2]](https://llvm.org/builds/)[[3]](https://r
 
 ### source code
 
-One also can build llvm/clang from source code which refers to [[4]](https://llvm.org/docs/GettingStarted.html)[[5]](https://llvm.org/docs/CMake.html)[[6]](https://llvm.org/docs/GettingStartedVS.html)[[7]](https://zhuanlan.zhihu.com/p/150395572).
+One also can build llvm/clang from source code, which refers to [[4]](https://llvm.org/docs/GettingStarted.html)[[5]](https://llvm.org/docs/CMake.html)[[6]](https://llvm.org/docs/GettingStartedVS.html)[[7]](https://zhuanlan.zhihu.com/p/150395572).
 
 #### llvm
 
@@ -40,3 +40,9 @@ $ cmake -S llvm-project/llvm -B build/ -G "Visual Studio 16 2019" -A x64 -T host
 $ cmake --build build/ --config Release
 $ cmake --install build/ --prefix install
 ```
+
+## embedding
+
+### source code
+
+One can add llvm to project by compiling source code, which refers to [[8]](https://stackoverflow.com/questions/57298264/cmake-build-with-llvm-project-as-a-subdirectory)[[9]](./1)
