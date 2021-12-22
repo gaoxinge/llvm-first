@@ -16,7 +16,7 @@ Also one can build llvm/clang from source code.
 
 #### llvm
 
-```shell
+```
 $ git clone git@github.com:llvm/llvm-project.git --depth=1
 $ cmake -S llvm-project/llvm -B build/ -G "Visual Studio 16 2019" -A x64 -T host=x64 -DLLVM_TARGETS_TO_BUILD=X86
 $ cmake --build build/ --config Release
@@ -25,7 +25,7 @@ $ cmake --install build/ --prefix install
 
 #### clang
 
-```shell
+```
 $ git clone git@github.com:llvm/llvm-project.git --depth=1
 $ cmake -S llvm-project/clang -B build/ -G "Visual Studio 16 2019" -A x64 -T host=x64 -DLLVM_TARGETS_TO_BUILD=X86 -DLLVM_DIR=<llvm_install_dir>/lib/cmake/llvm
 $ cmake --build build/ --config Release
@@ -34,7 +34,7 @@ $ cmake --install build/ --prefix install
 
 #### llvm + clang
 
-```shell
+```
 $ git clone git@github.com:llvm/llvm-project.git --depth=1
 $ cmake -S llvm-project/llvm -B build/ -G "Visual Studio 16 2019" -A x64 -T host=x64 -DLLVM_TARGETS_TO_BUILD=X86 -DLLVM_ENABLE_PROJECTS=clang
 $ cmake --build build/ --config Release
