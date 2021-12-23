@@ -43,6 +43,10 @@ $ cmake --install build/ --prefix install
 
 ## embedding
 
+### prebuild + msvc
+
+One can add llvm by prebuild and compile whole project by msvc, which refers to [[5]](https://llvm.org/docs/CMake.html)[[8]](./1).
+
 ### source code
 
-One can add llvm to project by compiling source code, which refers to [[8]](https://stackoverflow.com/questions/57298264/cmake-build-with-llvm-project-as-a-subdirectory)[[9]](./1).
+One can add llvm to project by compiling source code, which refers to [[9]](https://stackoverflow.com/questions/57298264/cmake-build-with-llvm-project-as-a-subdirectory)[[10]](./2).
